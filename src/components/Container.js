@@ -15,7 +15,19 @@ const Container = () => {
       return;
     }
     setMove(moveRef);
+    
     player === 1 ? setPlayer(2) : setPlayer(1);
+    
+        /*  [0,1,2] 
+            [3,4,5] 
+            [6,7,8] 
+            [0,3,6] 
+            [1,4,7] 
+            [2,5,8] 
+            [0,4,8] 
+            [2,4,6] */
+
+    const winner = () => {};
     switch (true) {
       case move[0] === move[1] && move[0] === move[2]:
         if (move[0] * move[1] * move[2] === 0) {
